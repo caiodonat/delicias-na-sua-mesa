@@ -1,25 +1,47 @@
+* {
+	padding: 0px;
+}
+
 body,
 html {
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica;
+	font-family: Perpetua;
+	background-color:#FAF9F6;
 }
 
-/* li {
-	float: right;
-} */
+p {
+	font-size: 25px;
+}
 
-/* ul {
-	list-style: none;
-	padding-left: 5px;
-} */
+h1, h2, h3 {
+	font-family: Bebas Neue;
+}
+
+nav {
+	border-radius: 50px;
+	background-color: #A51515;
+	margin: 15px;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+	z-index: 1;
+}
+
 
 .menu-nav {
 	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
 }
 
 .menu-nav a:hover:not(.logo) {
 	color: #ff6e39;
+	transition-duration: 0.5s;
 }
 
 .menu-nav li {
@@ -28,36 +50,38 @@ html {
 
 .menu-nav li a {
 	display: block;
+	font-size: 22px;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-weight: bold;
+	transition-duration: 0.5s;
 }
 
 .menu-nav ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 	overflow: hidden;
-	background-color: #A51515;
 }
 
 .menu-nav-logo {
 	background-color: #FFFFFF;
+	list-style-type: none;
 	border-radius: 100px;
-	margin: 6px;
+	border-style:double;
+	margin: 5px;
 }
 
-.menu-nav ul {
+.menu-nav-list {
+	list-style-type: none;
 	display: flex;
-}
-
-.active {
-	background-color: #04AA6D;
 }
 
 .content {
 	max-width: 1440px;
+	padding-top: 200px;
 	margin: auto;
 	grid-gap: 3rem;
 	display: grid;
@@ -70,15 +94,81 @@ html {
 
 .about {
     display: flex;
+	
 }
 
-.about p {
+.cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
 }
+
+.card-content-1 {
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 1rem;
+	margin: 2rem;
+	text-align: center;
+	
+}
+
+.card-content-2 {
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 1rem;
+	margin: 2rem;
+	text-align: center;
+}
+
+.card-content-3 {
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 1rem;
+	margin: 2rem;
+	text-align: center;
+}
+
+.cards img {
+	object-fit: cover;
+	border-radius: 1rem;
+	width: 300px;
+	height: 200px;
+}
+
+.cards h2 {
+	padding: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.cards a {
+	color: black;
+	transition-duration: 0.5s;
+	text-decoration: none;
+}
+
+.cards a:hover {
+	color: #04AA6D;
+	transition-duration: 0.5s;
+	text-decoration: none;
+}
+
+.card-text {
+	color: #474747;
+	font-size: 20px;
+	width: 15rem;
+	text-align: left;
+	padding: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 footer {
 	height: 5rem;
 	border-top: solid 1px #cdcdcd;
-	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
