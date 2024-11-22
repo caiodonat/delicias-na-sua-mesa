@@ -84,9 +84,15 @@ nav {
 	padding-right: 1rem;
 }
 
+.content-image {
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+}
+
 .about {
     display: flex;
-	
+	flex-direction: column;
 }
 
 .cards {
@@ -157,6 +163,9 @@ nav {
     text-overflow: ellipsis;
 }
 
+.content-main ul{
+	font-size: 22px;
+}
 
 footer {
 	height: 5rem;
@@ -166,5 +175,5 @@ footer {
 	width: 100%;
 	background-color: #ececec;
 	text-align: right;
-	/* margin: 10px; */
+
 }
